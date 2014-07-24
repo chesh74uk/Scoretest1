@@ -10,5 +10,31 @@
   <%= @race.blue_score %>
 </p>
 
+<p>
+  <strong>Red score:</strong>
+  <%= @race.red_score %>
+</p>
+
+<p>
+  <strong>White score:</strong>
+  <%= @race.white_score %>
+</p>
+
+<p>
+  <strong>Yellow score:</strong>
+  <%= @race.yellow_score %>
+</p>
+
+<p><strong>Home score: </strong>
+<% home_score = @race.blue_score + @race.red_score %>
+  <%=   home_score %>
+</p>
+
+<p><strong>Away score: </strong>
+  <% away_score = @race.white_score + @race.yellow_score %>
+  <%=   away_score %>
+</p>
+
+
 <%= link_to 'Edit', edit_race_path(@race) %> |
 <%= link_to 'Back', races_path %>

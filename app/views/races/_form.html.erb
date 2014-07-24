@@ -19,6 +19,19 @@
     <%= f.label :blue_score %><br>
     <%= f.input :blue_score, collection: 0..3 %>
   </div>
+    <div class="field">
+      <%= f.label :red_score %><br>
+      <%= f.input :red_score, collection: 0..3 %>
+    </div>
+    <div class="field">
+      <%= f.label :white_score %><br>
+      <%= f.input :white_score, collection: 0..3 %>
+    </div>
+    <div class="field">
+      <%= f.label :yellow_score %><br>
+      <%= f.input :yellow_score, collection: 0..3 %>
+    </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

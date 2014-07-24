@@ -5,9 +5,9 @@
     <tr>
       <th>Race</th>
       <th>Blue score</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Red score</th>
+      <th>White score</th>
+      <th>Yellow score</th>
     </tr>
   </thead>
 
@@ -16,6 +16,9 @@
       <tr>
         <td><%= race.race_id %></td>
         <td><%= race.blue_score %></td>
+        <td><%= race.red_score %></td>
+        <td><%= race.white_score %></td>
+        <td><%= race.yellow_score %></td>
         <td><%= link_to 'Show', race %></td>
         <td><%= link_to 'Edit', edit_race_path(race) %></td>
         <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -32,9 +32,21 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'better_errors'
+  gem 'quiet_assets'
+end
+
+group :test do
+  gem 'watir-webdriver'
+  gem 'capybara'
+end
+
 #extra gems
 
 gem 'simple_form'
+gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724193606) do
+ActiveRecord::Schema.define(version: 20140724195559) do
 
   create_table "races", force: true do |t|
     t.integer  "race_id"
     t.integer  "blue_score"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "red_score"
+    t.integer  "white_score"
+    t.integer  "yellow_score"
   end
 
 end
