@@ -35,6 +35,24 @@
   <%=   away_score %>
 </p>
 
+<p><strong>total home score: </strong>
+
+  <% blue_sum = @races.sum(:blue_score)   %>
+  <% red_sum = @races.sum(:red_score)  %>
+  <%= total_home = blue_sum + red_sum   %>
+
+
+</p>
+
+<p><strong>total away score: </strong>
+
+  <% white_sum = @races.sum(:white_score)   %>
+  <% yellow_sum = @races.sum(:yellow_score)  %>
+  <%= total_away = white_sum + yellow_sum   %>
+
+
+</p>
+
 
 <%= link_to 'Edit', edit_race_path(@race) %> |
 <%= link_to 'Back', races_path %>
