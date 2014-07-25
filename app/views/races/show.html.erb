@@ -1,8 +1,11 @@
+<%= render "layouts/totalscore" %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Race:</strong>
-  <%= @race.race_id %>
+<h1>
+  Race: <%= @race.race_id %>
+</h1>
 </p>
 
 <p>
@@ -34,23 +37,6 @@
   <% away_score = @race.white_score + @race.yellow_score %>
   <%=   away_score %>
 </p>
-
-<p><strong>total home score: </strong>
-
-  <% blue_sum = @races.sum(:blue_score)   %>
-  <% red_sum = @races.sum(:red_score)  %>
-  <%= total_home = blue_sum + red_sum   %>
-
-
-</p>
-
-<p><strong>total away score: </strong>
-
-  <% white_sum = @races.sum(:white_score)   %>
-  <% yellow_sum = @races.sum(:yellow_score)  %>
-  <%= total_away = white_sum + yellow_sum   %>
-
-
 
 </p>
 
