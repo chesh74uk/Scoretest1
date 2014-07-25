@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140724195559) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "races", force: true do |t|
     t.integer  "race_id"
     t.integer  "blue_score"

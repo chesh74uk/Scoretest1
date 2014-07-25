@@ -21,4 +21,10 @@
       <column name="seq" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails Scoretest1: production" uuid="d43aea3d-8e9c-4a1a-bca2-85c84079d42b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Scoretest1: test" uuid="2ecf1382-2b14-498e-8f32-99644f8a162d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

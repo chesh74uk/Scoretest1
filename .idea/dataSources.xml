@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2639384249">
+  <component name="DataSourceManagerImpl" format="xml" hash="1480816843">
     <data-source source="LOCAL" name="Rails Scoretest1: development" uuid="c0c3a4a0-68c5-4f19-96e8-3bd26e220bde">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:postgresql:myapp_development</jdbc-url>
+      <user-name>myapp</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Scoretest1: production" uuid="d43aea3d-8e9c-4a1a-bca2-85c84079d42b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:my_production_database</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails Scoretest1: test" uuid="2ecf1382-2b14-498e-8f32-99644f8a162d">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:myapp_test</jdbc-url>
+      <user-name>myapp</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
+      <libraries />
     </data-source>
   </component>
 </project>
