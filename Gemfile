@@ -38,6 +38,7 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
+
 group :test do
   gem 'watir-webdriver'
   gem 'capybara'
