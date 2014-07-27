@@ -11,28 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :race_id %><br>
-    <%= f.input :race_id, collection: 1..12 %>
-  </div>
-  <div class="field">
-    <%= f.label :blue_score %><br>
-    <%= f.input :blue_score, collection: 0..3 %>
-  </div>
-    <div class="field">
-      <%= f.label :red_score %><br>
-      <%= f.input :red_score, collection: 0..3 %>
-    </div>
-    <div class="field">
-      <%= f.label :white_score %><br>
-      <%= f.input :white_score, collection: 0..3 %>
-    </div>
-    <div class="field">
-      <%= f.label :yellow_score %><br>
-      <%= f.input :yellow_score, collection: 0..3 %>
-    </div>
+
+    <div class="container">
+      <div class="field"><p><%= f.input :race_id, collection: 1..12 %></p></div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4" class=""field><p><%= f.input :blue_score, collection: 0..3 %></p></div>
+        <div class="col-sm-6 col-md-4" class=""field><p><%= f.input :red_score, collection: 0..3 %></p></div>
+        <div class="col-sm-6 col-md-4" class=""field><p><%= f.input :white_score, collection: 0..3 %></p></div>
+        <div class="clearfix visible-md-block"></div>
+        <div class="col-sm-6 col-md-4" class=""field><p><%= f.input :yellow_score, collection: 0..3 %></p></div>
+
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-success" %>
   </div>
 <% end %>

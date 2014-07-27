@@ -1,14 +1,16 @@
-<h1>Listing races</h1>
+<h1>Races</h1>
+
+<%= render "layouts/totalscore" %>
 
 <div class="table-responsive">
 <table class="table table-striped">
   <thead>
     <tr>
       <th>Race</th>
-      <th>Blue score</th>
-      <th>Red score</th>
-      <th>White score</th>
-      <th>Yellow score</th>
+      <th>Blue:</th>
+      <th>Red:</th>
+      <th>White:</th>
+      <th>Yellow:</th>
     </tr>
   </thead>
 
@@ -20,9 +22,9 @@
         <td><%= race.red_score %></td>
         <td><%= race.white_score %></td>
         <td><%= race.yellow_score %></td>
-        <td><%= link_to 'Show', race %></td>
-        <td><%= link_to 'Edit', edit_race_path(race) %></td>
-        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', race, class: "btn btn-info" %></td>
+        <td><%= link_to 'Edit', edit_race_path(race), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"%></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Race', new_race_path %>
+<%= link_to 'New Race', new_race_path, class: "btn btn-success" %>
