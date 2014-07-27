@@ -8,35 +8,37 @@
 </h1>
 </p>
 
-<p>
-  <strong>Blue score:</strong>
-  <%= @race.blue_score %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <p>
+        <strong>Blue score:</strong>
+        <%= @race.blue_score %>
+      </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <p>
+        <strong>Red score:</strong>
+        <%= @race.red_score %>
+      </p>
+    </div>
+    <div class="clearfix visible-sm-block"></div>
+    <div class="col-sm-6 col-md-4">
+      <p>
+        <strong>White score:</strong>
+        <%= @race.white_score %>
+      </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <p>
+        <strong>Yellow score:</strong>
+        <%= @race.yellow_score %>
+      </p>
+    </div>
+    <div class="clearfix visible-sm-block"></div>
+  </div>
+</div>
 
-<p>
-  <strong>Red score:</strong>
-  <%= @race.red_score %>
-</p>
-
-<p>
-  <strong>White score:</strong>
-  <%= @race.white_score %>
-</p>
-
-<p>
-  <strong>Yellow score:</strong>
-  <%= @race.yellow_score %>
-</p>
-
-<p><strong>Home score: </strong>
-<% home_score = @race.blue_score + @race.red_score %>
-  <%=   home_score %>
-</p>
-
-<p><strong>Away score: </strong>
-  <% away_score = @race.white_score + @race.yellow_score %>
-  <%=   away_score %>
-</p>
 
 </p>
 
