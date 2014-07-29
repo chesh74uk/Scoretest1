@@ -17,7 +17,11 @@
   <tbody>
     <% @races.each do |race| %>
       <tr>
-        <td><%= race.race_id %></td>
+        <td><%= link_to(race)  do %>
+              <button type="button" class="btn btn-default">
+        <%= race.race_id %>
+                  </button>
+              <% end %></td>
         <td><%= race.blue_score %></td>
         <td><%= race.red_score %></td>
         <td><%= race.white_score %></td>
