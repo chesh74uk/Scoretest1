@@ -1,17 +1,25 @@
 
     <div class="container">
-      <h2>home score:
+      <div class="row">
 
-        <% blue_sum = @races.sum(:blue_score)   %>
-        <% red_sum = @races.sum(:red_score)  %>
-        <%= total_home = blue_sum + red_sum   %>
+        <div class="col-md-3">
+          <p></p>
+        </div>
+
+        <div class="col-md-3">
+          <h2>home score: <%=   total_score("home") %></h2>
+          <p></p>
+
+        </div>
+
+        <div class="col-md-3">
+          <h2>away score: <%=   total_score("away") %></h2>
+        </div>
 
 
-        <br>away score:
+        <div class="col-md-3">
+          <p></p>
+        </div>
 
-        <% white_sum = @races.sum(:white_score)   %>
-        <% yellow_sum = @races.sum(:yellow_score)  %>
-        <%= total_away = white_sum + yellow_sum   %>
-      </h2>
-
+      </div>
     </div>

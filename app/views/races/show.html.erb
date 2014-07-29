@@ -10,37 +10,45 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
+    <div class="col-xs-6">
       <p>
         <strong>Blue:</strong>
         <%= @race.blue_score %>
       </p>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-xs-6">
       <p>
         <strong>Red:</strong>
         <%= @race.red_score %>
       </p>
     </div>
-    <div class="clearfix visible-sm-block"></div>
-    <div class="col-sm-6 col-md-4">
+    </div>
+  <div class="row">
+    <div class="col-xs-6">
       <p>
         <strong>White:</strong>
         <%= @race.white_score %>
       </p>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-xs-64">
       <p>
         <strong>Yellow:</strong>
         <%= @race.yellow_score %>
       </p>
     </div>
-    <div class="clearfix visible-sm-block"></div>
+    </div>
   </div>
+  <div class="row">
+  <p></p>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <%= link_to 'Edit', edit_race_path(@race), class: "btn btn-success" %> |
+      <%= link_to 'Back', races_path, class: "btn btn-info" %>
+   </div>
 </div>
 
 
 </p>
 
-<%= link_to 'Edit', edit_race_path(@race), class: "btn btn-success" %> |
-<%= link_to 'Back', races_path, class: "btn btn-info" %>
+
