@@ -26,10 +26,11 @@
         <td><%= race.red_score %></td>
         <td><%= race.white_score %></td>
         <td><%= race.yellow_score %></td>
+        <td><%= link_to 'Delete', race, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"%></td>
         <!--
           <td><%= link_to 'Show', race, class: "btn btn-info" %></td>
           <td><%= link_to 'Edit', edit_race_path(race), class: "btn btn-success" %></td>
-          <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"%></td>
+
         <-->
       </tr>
     <% end %>

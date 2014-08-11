@@ -55,6 +55,7 @@ end
 #extra gems
 
 gem 'simple_form'
+
 gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
