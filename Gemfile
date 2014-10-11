@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+# gem 'jbuilder', '~> 1.2'
 
 gem 'pg'
 
@@ -70,4 +70,4 @@ gem 'bootstrap-sass'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-ruby '2.0.0'
+ruby '2.1.3'

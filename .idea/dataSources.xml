@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails Scoretest1: development" uuid="c0c3a4a0-68c5-4f19-96e8-3bd26e220bde">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:myapp_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/myapp_development</jdbc-url>
       <user-name>myapp</user-name>
       <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
       <libraries>
