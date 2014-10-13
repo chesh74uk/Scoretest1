@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724195559) do
+ActiveRecord::Schema.define(version: 20141013190823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "meetings", force: true do |t|
+    t.integer  "meeting_id"
+    t.string   "home_team"
+    t.string   "away_team"
+    t.date     "meeting_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "races", force: true do |t|
     t.integer  "race_id"
@@ -24,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140724195559) do
     t.integer  "red_score"
     t.integer  "white_score"
     t.integer  "yellow_score"
+    t.integer  "meeting_id"
   end
 
 end

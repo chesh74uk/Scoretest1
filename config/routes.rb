@@ -1,4 +1,5 @@
 Scoretest1::Application.routes.draw do
+  resources :meetings
   resources :races
   root 'races#index'
 
