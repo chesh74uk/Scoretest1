@@ -1,29 +1,5 @@
-<%= simple_form_for(@meeting) do |f| %>
-    <% if @meeting.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@meeting.errors.count, "error") %> prohibited this race from being saved:</h2>
+<h1>New meeting</h1>
 
-          <ul>
-            <% @meeting.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+<%= render 'form' %>
 
-
-    <form class="form-horizontal">
-      <div class="form-group">
-
-        <label class="control-label col-xs-2">Home team:</label>
-        <div class="col-xs-10"><p><%= f.input :home_team, :collection => [['Belle Vue', :BelleVue],['Poole', :Poole]], label:false %></p></div>
-
-      </div>
-      <div class="actions">
-        <%= f.submit class: "btn btn-success" %>
-      </div>
-    </form>
-
-
-
-<% end %>
+<%= link_to 'Back', meetings_path %>

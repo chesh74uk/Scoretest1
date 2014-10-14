@@ -1,0 +1,32 @@
+<%= simple_form_for(@meeting) do |f| %>
+    <% if @meeting.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
+
+          <ul>
+            <% @meeting.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <form class="form-horizontal">
+      <div class="form-group">
+
+        <label class="control-label col-xs-2">Home team:</label>
+        <div class="col-xs-10"><p><%= f.input :home_team, :collection => [['Belle Vue', :BelleVue],['Poole', :Poole]], label:false %></p></div>
+        <label class="control-label col-xs-2">Away team:</label>
+        <div class="col-xs-10"><p><%= f.input :away_team, :collection => [['Belle Vue', :BelleVue],['Poole', :Poole]], label:false %></p></div>
+        <label class="control-label col-xs-2">Meeting date:</label>
+        <div class="col-xs-10"><p><%= f.input :meeting_date, as: :date, label:false %></p></div>
+      </div>
+      <div class="actions">
+       <P><%= f.submit class: "btn btn-success" %></P>
+      </div>
+    </form>
+
+
+
+<% end %>
