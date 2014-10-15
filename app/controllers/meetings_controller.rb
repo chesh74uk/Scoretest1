@@ -1,7 +1,9 @@
 class MeetingsController < ApplicationController
   def new
     @meeting = Meeting.new
+    @meeting.races.build
   end
+
 
   def show
     @meeting = Meeting.find(params[:id])
@@ -25,7 +27,7 @@ class MeetingsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def meeting_params
-    params.require(:meeting).permit(:meeting_id, :home_team, :away_team, :meeting_date)
+    params.require(:meeting).permit(:meeting_id, :home_team, :away_team, :meeting_date, races_attributes:[:blue_score])
   end
 
 end
